@@ -46,9 +46,34 @@ default=>"No match found",
 
 echo $result;
 
+$fruits = ["Apple","banana","Cherrry"];
+echo $fruits[0]; 
+unset($fruits[1]);
+echo implode(", ",$fruits);
+echo "<br>";
+$tasks = $fruits + ['Apple','Cheeku'];
+print_r($tasks);
+
+$map = [
+    
+    "name"=>"Shreyank",
+    "fruit"=>"apple",
+];
+
+print_r($map);
+
+#sorting actually overrides the key and writes the index... 
+sort($map);
+print_r($map);
 
 
+$tasks = [...$fruits, ...$fruits];
+echo implode(", ",$tasks);
+echo "<br>";
+array_splice($tasks,1,1,"mango");
+echo implode(", ",$tasks);
 
+// echo $tasks[-1]; doesnt work haha 
 
 
 ?>

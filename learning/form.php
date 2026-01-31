@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Simple Form</title>
-  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="../css/form.css" />
 </head>
 <body>
   <div class="container">
